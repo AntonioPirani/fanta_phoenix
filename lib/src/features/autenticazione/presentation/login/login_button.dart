@@ -9,11 +9,10 @@ class LoginButton extends StatelessWidget {
       padding: const EdgeInsets.symmetric(vertical: 5.0),
       width: double.infinity,
       child: 
-        const Column(
+        Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             ElevatedButton(
-              //elevation: 5.0,
               // onPressed: () {
               //   setState(() {
               //     if(_controllerEmail.text.isEmpty || _controllerPw.text.isEmpty){
@@ -43,13 +42,23 @@ class LoginButton extends StatelessWidget {
               //   });
               // },
               onPressed: null,
-              //padding: const EdgeInsets.all(15.0),
-              //shape: RoundedRectangleBorder(
-              //borderRadius: BorderRadius.circular(30.0),
-              //),
-              //color: Colors.white,
+              style: ButtonStyle(
+                backgroundColor: WidgetStateProperty.resolveWith<Color>((Set<WidgetState> states) {
+                  return Colors.white;
+                }),
+                padding: WidgetStateProperty.all<EdgeInsetsGeometry>(
+                  const EdgeInsets.all(15.0),
+                ),
+                shape: WidgetStateProperty.all<RoundedRectangleBorder>(
+                  RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(30.0),
+                  ),
+                ),
+                elevation: WidgetStateProperty.all<double>(5.0),
+                minimumSize: WidgetStateProperty.all<Size>(const Size(150, 50)),
+              ),
               child: 
-                Text(
+                const Text(
                   'Login',
                   style: TextStyle(
                     color: Color(0xFF527DAA),

@@ -1,13 +1,18 @@
 import 'package:flutter/material.dart';
 
 class SignupButton extends StatelessWidget {
-  const SignupButton({super.key});
+  final Widget registrationScreen;
+  const SignupButton({super.key, required this.registrationScreen});
 
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
-      //onTap: () => Navigator.push(context, MaterialPageRoute(builder: (context) => RegistrationScreen())),  // ! anche qui passare il metodo dal costruttore
-      onTap: null,
+      onTap: () => Navigator.push(
+        context, 
+        MaterialPageRoute(
+          builder: (context) => registrationScreen
+        )
+      ),  
       child: RichText(
         text: const TextSpan(
           children: [
