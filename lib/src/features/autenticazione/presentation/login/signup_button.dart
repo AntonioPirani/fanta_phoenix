@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 
 class SignupButton extends StatelessWidget {
-  final Widget registrationScreen;
-  const SignupButton({super.key, required this.registrationScreen});
+  final Widget registrationeScreen;
+  const SignupButton({super.key, required this.registrationeScreen});
 
   @override
   Widget build(BuildContext context) {
@@ -10,7 +10,7 @@ class SignupButton extends StatelessWidget {
       onTap: () => Navigator.push(
         context, 
         MaterialPageRoute(
-          builder: (context) => registrationScreen
+          builder: (context) => registrationeScreen
         )
       ),  
       child: RichText(

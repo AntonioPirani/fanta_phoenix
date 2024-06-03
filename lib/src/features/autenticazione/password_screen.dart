@@ -1,27 +1,22 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
-import 'package:fanta_phoenix/src/features/autenticazione/presentation/login/index.dart';
-import 'package:fanta_phoenix/src/features/autenticazione/registrazione.dart';
-import 'package:fanta_phoenix/src/common_widgets/motto_text.dart';
-//import 'package:prova1/screens/registration.dart';
-//import 'package:prova1/screens/password.dart';
-//import 'package:prova1/screens/home.dart';
-//import 'package:rflutter_alert/rflutter_alert.dart';
+import 'package:fanta_phoenix/src/features/autenticazione/presentation/password/index.dart';
+import 'package:fanta_phoenix/src/common_widgets/index.dart';
 
-class LoginScreen extends StatefulWidget {
-  const LoginScreen({super.key});
+class PasswordScreen extends StatefulWidget {
+  const PasswordScreen({super.key});
   
   @override
-  LoginScreenState createState() => LoginScreenState();
+  PasswordScreenState createState() => PasswordScreenState();
 }
 
-class LoginScreenState extends State<LoginScreen> {
-  //bool _rememberMe = false;
+class PasswordScreenState extends State<PasswordScreen> {
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      // ! come per la registrazione valutare se usare la appBar
       body: AnnotatedRegion<SystemUiOverlayStyle>(
         value: SystemUiOverlayStyle.light,
         child: GestureDetector(
@@ -36,8 +31,8 @@ class LoginScreenState extends State<LoginScreen> {
                     begin: Alignment.topCenter,
                     end: Alignment.bottomCenter,
                     colors: [
-                      Colors.indigo, // indigo - amber
-                      Colors.lime,   // lime   - red
+                      Colors.indigo,
+                      Colors.lime,
                     ],
                     stops: [0.1, 0.9],
                   ),
@@ -54,28 +49,16 @@ class LoginScreenState extends State<LoginScreen> {
                   child: Column(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: <Widget>[
-                      SizedBox(
-                        height: 30.0,
+                      Align(
+                        alignment: Alignment.topLeft,
+                        child: TornaAlLoginButton()
                       ),
-                      TitoloText(),
-                      LogoImage(),
-                      SizedBox(
-                        height: 30.0,
-                      ),
+                      RecuperaPasswordText(),
+                      SizedBox(height: 50.0),
                       EmailTextField(),
-                      SizedBox(
-                        height: 30.0,
-                      ),
-                      PasswordTextfield(),
-                      PasswordDimenticataButton(),
-                      //RicordamiCheckbox(),
-                      LoginButton(),
-                      SignupButton(
-                        registrationScreen: RegistrazioneScreen(),
-                      ),
-                      SizedBox(
-                        height: 40.0,
-                      ),
+                      SizedBox(height: 50.0),
+                      RecuperaPasswordButton(),
+                      SizedBox(height: 250.0),
                       MottoText()
                     ],
                   ),

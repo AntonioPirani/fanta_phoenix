@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class IndietroButton extends StatelessWidget {
-  const IndietroButton({super.key});
+class TornaAlLoginButton extends StatelessWidget {
+  const TornaAlLoginButton({super.key});
 
   @override
   Widget build(BuildContext context) {

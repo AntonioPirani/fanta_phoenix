@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:fanta_phoenix/src/features/autenticazione/login.dart';
+import 'package:fanta_phoenix/src/features/autenticazione/login_screen.dart';
 
 void main() {
 

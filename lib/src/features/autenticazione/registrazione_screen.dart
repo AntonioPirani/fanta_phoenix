@@ -2,16 +2,16 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
 import 'package:fanta_phoenix/src/features/autenticazione/presentation/registrazione/index.dart';
-import 'package:fanta_phoenix/src/common_widgets/motto_text.dart';
+import 'package:fanta_phoenix/src/common_widgets/index.dart';
 
 class RegistrazioneScreen extends StatefulWidget {
   const RegistrazioneScreen({super.key});
   
   @override
-  LoginScreenState createState() => LoginScreenState();
+  RegistrazioneScreenState createState() => RegistrazioneScreenState();
 }
 
-class LoginScreenState extends State<RegistrazioneScreen> {
+class RegistrazioneScreenState extends State<RegistrazioneScreen> {
 
   @override
   Widget build(BuildContext context) {
@@ -53,7 +53,7 @@ class LoginScreenState extends State<RegistrazioneScreen> {
                     children: <Widget>[
                       Align(
                         alignment: Alignment.topLeft,
-                        child: IndietroButton()
+                        child: TornaAlLoginButton()
                       ),
                       RegistrazioneText(),
                       SizedBox(height: 20.0),
