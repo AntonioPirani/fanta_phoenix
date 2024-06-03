@@ -1,8 +1,8 @@
-import 'package:fanta_phoenix/src/features/autenticazione/presentation/signup_button.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
-import 'package:fanta_phoenix/src/features/autenticazione/presentation/index.dart';
+import 'package:fanta_phoenix/src/features/autenticazione/presentation/login/index.dart';
+import 'package:fanta_phoenix/src/common_widgets/motto_text.dart';
 //import 'package:prova1/screens/registration.dart';
 //import 'package:prova1/screens/password.dart';
 //import 'package:prova1/screens/home.dart';
@@ -35,8 +35,8 @@ class LoginScreenState extends State<LoginScreen> {
                       begin: Alignment.topCenter,
                       end: Alignment.bottomCenter,
                       colors: [
-                        Colors.amber, // indigo
-                        Colors.red,   // lime
+                        Colors.indigo, // indigo - amber
+                        Colors.lime,   // lime   - red
                       ],
                       stops: [0.1, 0.9],
                     ),
@@ -54,27 +54,30 @@ class LoginScreenState extends State<LoginScreen> {
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: <Widget>[
                         SizedBox(
-                          height: 30.0
+                          height: 30.0,
                         ),
                         TitoloText(),
                         LogoImage(),
                         SizedBox(
-                          height: 30.0
+                          height: 30.0,
                         ),
                         EmailTextField(),
                         SizedBox(
-                          height: 30.0
+                          height: 30.0,
                         ),
                         PasswordTextfield(),
                         PasswordDimenticataButton(),
                         //RicordamiCheckbox(),
                         LoginButton(),
                         SignupButton(),
+                        SizedBox(
+                          height: 40.0,
+                        ),
                         MottoText()
                       ],
                     ),
                   ),
-                )
+                ),
               ],
             ),
           ),
