@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 
 class LoginButton extends StatelessWidget {
-  const LoginButton({super.key});
+  final Widget navigazioneScreen;
+  const LoginButton({super.key, required this.navigazioneScreen});
 
   @override
   Widget build(BuildContext context) {
@@ -41,7 +42,12 @@ class LoginButton extends StatelessWidget {
               //     }
               //   });
               // },
-              onPressed: null,
+              onPressed: () {
+                Navigator.pushReplacement(
+                  context,
+                  MaterialPageRoute(builder: (context) => navigazioneScreen),
+                );
+              },
               style: ButtonStyle(
                 backgroundColor: WidgetStateProperty.resolveWith<Color>((Set<WidgetState> states) {
                   return Colors.white;

@@ -8,10 +8,10 @@ class RegistrazioneScreen extends StatefulWidget {
   const RegistrazioneScreen({super.key});
   
   @override
-  RegistrazioneScreenState createState() => RegistrazioneScreenState();
+  State<RegistrazioneScreen> createState() => _RegistrazioneScreenState();
 }
 
-class RegistrazioneScreenState extends State<RegistrazioneScreen> {
+class _RegistrazioneScreenState extends State<RegistrazioneScreen> {
 
   @override
   Widget build(BuildContext context) {

@@ -5,17 +5,17 @@ import 'package:fanta_phoenix/src/features/autenticazione/presentation/login/ind
 import 'package:fanta_phoenix/src/features/autenticazione/presentation/password_dimenticata/password_dimenticata_screen.dart';
 import 'package:fanta_phoenix/src/features/autenticazione/presentation/registrazione/registrazione_screen.dart';
 import 'package:fanta_phoenix/src/common_widgets/index.dart';
-//import 'package:prova1/screens/home.dart';
+import 'package:fanta_phoenix/src/features/home/presentation/navigazione_screen.dart';
 //import 'package:rflutter_alert/rflutter_alert.dart';
 
 class LoginScreen extends StatefulWidget {
   const LoginScreen({super.key});
   
   @override
-  LoginScreenState createState() => LoginScreenState();
+  State<LoginScreen> createState() => _LoginScreenState();
 }
 
-class LoginScreenState extends State<LoginScreen> {
+class _LoginScreenState extends State<LoginScreen> {
   //bool _rememberMe = false;
 
   @override
@@ -70,7 +70,9 @@ class LoginScreenState extends State<LoginScreen> {
                         passwordScreen: PasswordDimenticataScreen(),
                       ),
                       //RicordamiCheckbox(),
-                      LoginButton(),
+                      LoginButton(
+                        navigazioneScreen: NavigazioneScreen(),
+                      ),
                       SignupButton(
                         registrationeScreen: RegistrazioneScreen(),
                       ),

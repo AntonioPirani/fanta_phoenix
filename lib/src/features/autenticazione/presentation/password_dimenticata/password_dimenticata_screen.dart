@@ -8,10 +8,10 @@ class PasswordDimenticataScreen extends StatefulWidget {
   const PasswordDimenticataScreen({super.key});
   
   @override
-  PasswordDimenticataScreenState createState() => PasswordDimenticataScreenState();
+  State<PasswordDimenticataScreen> createState() => _PasswordDimenticataScreenState();
 }
 
-class PasswordDimenticataScreenState extends State<PasswordDimenticataScreen> {
+class _PasswordDimenticataScreenState extends State<PasswordDimenticataScreen> {
 
   @override
   Widget build(BuildContext context) {

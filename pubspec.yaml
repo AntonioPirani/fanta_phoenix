@@ -9,6 +9,7 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  font_awesome_flutter: ^10.7.0
 
 dev_dependencies:
   flutter_test:
@@ -21,3 +22,4 @@ flutter:
   assets:
     - assets/images/icons/logo.png
     - assets/images/icons/plogon.png
+    - assets/images/icons/f1.png
