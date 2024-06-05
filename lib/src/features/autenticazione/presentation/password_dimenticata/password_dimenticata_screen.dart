@@ -1,17 +1,17 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
-import 'package:fanta_phoenix/src/features/autenticazione/presentation/password/index.dart';
+import 'package:fanta_phoenix/src/features/autenticazione/presentation/password_dimenticata/index.dart';
 import 'package:fanta_phoenix/src/common_widgets/index.dart';
 
-class PasswordScreen extends StatefulWidget {
-  const PasswordScreen({super.key});
+class PasswordDimenticataScreen extends StatefulWidget {
+  const PasswordDimenticataScreen({super.key});
   
   @override
-  PasswordScreenState createState() => PasswordScreenState();
+  PasswordDimenticataScreenState createState() => PasswordDimenticataScreenState();
 }
 
-class PasswordScreenState extends State<PasswordScreen> {
+class PasswordDimenticataScreenState extends State<PasswordDimenticataScreen> {
 
   @override
   Widget build(BuildContext context) {

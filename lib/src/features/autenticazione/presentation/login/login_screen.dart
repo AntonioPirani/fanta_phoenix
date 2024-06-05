@@ -1,11 +1,10 @@
-import 'package:fanta_phoenix/src/features/autenticazione/password_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
 import 'package:fanta_phoenix/src/features/autenticazione/presentation/login/index.dart';
-import 'package:fanta_phoenix/src/features/autenticazione/registrazione_screen.dart';
+import 'package:fanta_phoenix/src/features/autenticazione/presentation/password_dimenticata/password_dimenticata_screen.dart';
+import 'package:fanta_phoenix/src/features/autenticazione/presentation/registrazione/registrazione_screen.dart';
 import 'package:fanta_phoenix/src/common_widgets/index.dart';
-//import 'package:prova1/screens/password.dart';
 //import 'package:prova1/screens/home.dart';
 //import 'package:rflutter_alert/rflutter_alert.dart';
 
@@ -68,7 +67,7 @@ class LoginScreenState extends State<LoginScreen> {
                       ),
                       PasswordTextfield(),
                       PasswordDimenticataButton(
-                        passwordScreen: PasswordScreen(),
+                        passwordScreen: PasswordDimenticataScreen(),
                       ),
                       //RicordamiCheckbox(),
                       LoginButton(),
