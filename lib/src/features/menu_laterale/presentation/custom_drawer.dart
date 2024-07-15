@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:fanta_phoenix/src/features/menu_laterale/presentation/drawer_index.dart';
 
 class CustomDrawer extends StatefulWidget {
   final bool isAdminVisible;
@@ -31,7 +32,12 @@ class _CustomDrawerState extends State<CustomDrawer> {
                 ListTile(
                   leading: const Icon(Icons.rule),
                   title: const Text('Regolamento'),
-                  onTap: () {},
+                  onTap: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => const RegolamentoScreen()),
+                    );
+                  },
                 ),
                 ListTile(
                   leading: const Icon(Icons.calendar_month),
@@ -39,7 +45,7 @@ class _CustomDrawerState extends State<CustomDrawer> {
                   onTap: () {},
                 ),
                 ListTile(
-                  leading: const Icon(Icons.money),
+                  leading: const Icon(Icons.currency_exchange),
                   title: const Text('Quotazioni Piloti e Scuderie'),
                   onTap: () {},
                 ),
@@ -80,3 +86,5 @@ class _CustomDrawerState extends State<CustomDrawer> {
     );
   }
 }
+
+// ! Prima di aggiungere le altre pagine per il menù laterale valutare se quelle che ci sono servono o bisogna modificare/aggiungere altro
