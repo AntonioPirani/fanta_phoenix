@@ -24,3 +24,6 @@ flutter:
     - assets/images/icons/plogon.png
     - assets/images/icons/f1.png
     - assets/images/icons/bandieraScacchi.png
+    - assets/images/scacchiBackground1.jpg
+    - assets/images/scacchiBackground2.jpg
+    - assets/images/map.png
