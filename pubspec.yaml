@@ -27,3 +27,8 @@ flutter:
     - assets/images/scacchiBackground1.jpg
     - assets/images/scacchiBackground2.jpg
     - assets/images/map.png
+    - assets/images/gettoni/autopilota.png
+    - assets/images/gettoni/extraBoost.png
+    - assets/images/gettoni/extraDRS.png
+    - assets/images/gettoni/fondiIllimitati.png
+    - assets/images/gettoni/noMalus.png

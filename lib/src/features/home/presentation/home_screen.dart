@@ -17,19 +17,17 @@ class _HomeScreenState extends State<HomeScreen> {
     return Scaffold(
       body: Stack(
         children: [
-          // Background image
+          // ? Sfondo, da valutare se usare l'opacità o usare una immagine già pronta
           // Container(
           //   decoration: const BoxDecoration(
           //     image: DecorationImage(
           //       image: AssetImage("assets/images/scacchiBackground2.jpg"),
           //       fit: BoxFit.cover,
-          //       // TODO valutare se usare l'opacità o cambiare immagini di BG
           //     ),
           //   ),
           // ),
-          // Foreground content with padding
           Padding(
-            padding: const EdgeInsets.all(16.0),
+            padding: const EdgeInsets.all(10.0),
             child: SingleChildScrollView( // Add SingleChildScrollView here
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
@@ -56,6 +54,7 @@ class _HomeScreenState extends State<HomeScreen> {
                     ),
                   ),
                   const SizedBox(height: 16.0),
+                  // ! Valutare se mettere un widget Hero per l'immagine così da ingrandirla
                   Image.asset(
                     'assets/images/map.png',
                     height: 200,
