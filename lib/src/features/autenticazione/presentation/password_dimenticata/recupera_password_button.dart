@@ -12,7 +12,7 @@ class RecuperaPasswordButton extends StatelessWidget {
           width: double.infinity,
           child: ElevatedButton(
             onPressed: () {
-              // TODO
+              Navigator.pop(context);
             },
             style: ButtonStyle(
               backgroundColor: WidgetStateProperty.resolveWith<Color>((Set<WidgetState> states) {

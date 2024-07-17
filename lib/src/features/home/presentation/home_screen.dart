@@ -8,6 +8,9 @@ class HomeScreen extends StatefulWidget {
 }
 
 class _HomeScreenState extends State<HomeScreen> {
+
+  bool isTeamActive = true; // ! Quando la squadra è registrata o meno
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -30,6 +33,10 @@ class _HomeScreenState extends State<HomeScreen> {
               mainAxisAlignment: MainAxisAlignment.center,
               crossAxisAlignment: CrossAxisAlignment.center,
               children: <Widget>[
+                Visibility(
+                  visible: isTeamActive,
+                  child: const Text('Visibile')
+                ),
                 const Text(
                   'MSC Cruises Japanese Grand Prix',
                   style: TextStyle(

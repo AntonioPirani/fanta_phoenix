@@ -11,7 +11,7 @@ class NomeTextfield extends StatelessWidget {
       crossAxisAlignment: CrossAxisAlignment.start,
       children: <Widget>[
         const Text(
-          'Cognome',
+          'Nome',
           style: kLabelStyle,
         ),
         const SizedBox(height: 10.0),
